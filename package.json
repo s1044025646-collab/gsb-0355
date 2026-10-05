@@ -1,0 +1,19 @@
+{
+  "name": "clock-offset-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "四时间戳时钟偏移与往返时延核算后端",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/core.test.js dist/test/store.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node scripts/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
+
+
