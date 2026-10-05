@@ -1,0 +1,22 @@
+{
+  "name": "four-timestamp-clock-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线四时间戳时钟偏移与往返时延核算后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test test/*.test.ts",
+    "start": "tsx src/cli.ts serve",
+    "demo": "tsx src/cli.ts demo",
+    "cli": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
